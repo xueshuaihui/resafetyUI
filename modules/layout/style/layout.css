@@ -1,0 +1,22 @@
+#resafety-web {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #eeeeee;
+  z-index: 99;
+}
+#resafety-web .top {
+  width: 100%;
+  height: 120px;
+  float: left;
+}
+#resafety-web .left {
+  width: auto;
+  height: calc(100% - 120px);
+  float: left;
+}
+#resafety-web .right {
+  width: auto;
+  height: calc(100% - 120px);
+  float: right;
+}

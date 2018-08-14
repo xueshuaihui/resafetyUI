@@ -1,0 +1,38 @@
+// layout style
+// resafety背景色
+@resafetybg: #eeeeee;
+// resafety层级
+@resafetyZindex: 99;
+
+// layout布局
+// top样式
+@topWidth: '100%';
+@topHeight: 120px;
+// 左右两边的宽度 默认auto;
+@sideWidth: auto;
+
+#resafety-web {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: @resafetybg;
+    z-index: @resafetyZindex;
+    // 头部
+    .top {
+        width: 100%;
+        height: @topHeight;
+        float: left;
+    }
+    // 左侧
+    .left {
+        width: @sideWidth;
+        height: calc(~'100% - @{topHeight}');
+        float: left;
+    }
+    // 右侧
+    .right {
+        width: @sideWidth;
+        height: calc(~'100% - @{topHeight}');
+        float: right;
+    }
+}
